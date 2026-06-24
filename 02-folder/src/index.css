@@ -1,0 +1,16 @@
+body{
+  background-color: black;
+  color: aliceblue;
+}
+.card{
+  background-color: lightblue;
+  color: rgb(70, 76, 76);
+  padding: 20px;
+   margin: 5px;
+}
+.nav{
+  background-color: lightblue;
+  color: rgb(70, 76, 76);
+  padding: 20px;
+   margin: 5px;
+}
