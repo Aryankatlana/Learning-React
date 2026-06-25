@@ -105,14 +105,15 @@ const App =()=>{
     pay: "$60/hr",
     location: "Mumbai, India"
   }
-  ];
-     console.log(jobOpenings);
+  ]
   return(
     <div className="parent">
-     {jobOpenings.map(function(elem){
+     {jobOpenings.map(function(elem , idx){
 
-      return <Card company={elem.companyName} post={elem.post} date={elem.datePosted} type={elem.tag1} salary={elem.pay} city={elem.location} posted={elem.datePosted}
-      level={elem.tag2} brandlogo={elem.brandLogo}/>
+      return <div key={idx}>
+        <Card company={elem.companyName} post={elem.post} date={elem.datePosted} type={elem.tag1} salary={elem.pay} city={elem.location} posted={elem.datePosted}
+        level={elem.tag2} brandlogo={elem.brandLogo}/>
+      </div>
      })}
     </div>
     
